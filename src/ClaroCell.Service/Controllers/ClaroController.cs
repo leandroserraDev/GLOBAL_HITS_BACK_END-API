@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ClaroCell.Service.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/mobile")]
     [ApiController]
     [Authorize]
     public class ClaroController : ControllerBase
