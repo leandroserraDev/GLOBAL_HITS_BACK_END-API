@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClaroCell.Domain\ClaroCell.Domain.csproj" />
+    <ProjectReference Include="..\ClaroCell.Infra\ClaroCell.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
