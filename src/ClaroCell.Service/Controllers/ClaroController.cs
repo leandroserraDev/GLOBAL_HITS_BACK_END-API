@@ -19,8 +19,8 @@ namespace ClaroCell.Service.Controllers
     public class ClaroController : ControllerBase
     {
         private readonly ICellAppService _cellAppService;
-        private readonly IHostingEnvironment _hostingEnv;
-        public ClaroController(ICellAppService cellAppService, IHostingEnvironment hostingEnv)
+        private readonly IWebHostEnvironment _hostingEnv;
+        public ClaroController(ICellAppService cellAppService, IWebHostEnvironment hostingEnv)
         {
             _cellAppService = cellAppService;
             _hostingEnv = hostingEnv;

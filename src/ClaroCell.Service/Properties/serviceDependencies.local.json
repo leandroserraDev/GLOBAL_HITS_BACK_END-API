@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/apiglobalhitss/databases/minhapiglobalhitss",
+      "type": "mssql.azure",
+      "connectionId": "Server=tcp:apiglobalhitss.database.windows.net,1433;",
+      "secretStore": "LocalSecretsFile"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/apiglobalhitss/databases/minhapiglobalhitss",
+      "type": "mssql.azure",
+      "connectionId": "ClaroConnection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}

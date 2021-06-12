@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/minhaappglobal/apis/minhapiglobalteste1",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/globalhitsstestevaga2762/databases/ClaroCell",
+      "type": "mssql.azure",
+      "connectionId": "ClaroConnection",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

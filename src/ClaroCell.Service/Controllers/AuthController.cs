@@ -56,15 +56,30 @@ namespace ClaroCell.Service.Controllers
         [Route("")]
         public async Task<ActionResult<dynamic>> Create([FromBody] User model)
         {
-            // Recupera o usuário
             var result = await _userAppService.Add(model);
 
-            // Verifica se o usuário existe
             if (!result)
                 return NotFound(new { message = "Não foi possivel cadastrar o usuario" });
 
+            var user = await _userAppService.GetLogin(model.Login, model.Password);
 
-            return Ok();
+            // Verifica se o usuário existe
+            if (user == null)
+                return NotFound(new { message = "Usuário ou senha inválidos" });
+
+            // Gera o Token
+            var token = GenerateToken(user);
+
+            // Oculta a senha
+            user.SetPassword("");
+
+            // Retorna os dados
+            return new
+            {
+                user = user,
+                token = token
+            };
+
         }
 
         // GET api/<UserController>/5

@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/apiglobalhits/apis/apiglobalhitss",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/apiglobalhitss/databases/minhapiglobalhitss",
+      "type": "mssql.azure",
+      "connectionId": "Server=tcp:apiglobalhitss.database.windows.net,1433;",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
